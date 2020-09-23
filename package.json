@@ -1,0 +1,16 @@
+{
+  "name": "sorting-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Joao Paulo Furtado <joaopaulofurtado@live.com>",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^5.3.0",
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start:build": "tsc -w",
+    "start:run": "nodemon build/index.js",
+    "start": "concurrently npm:start:*"
+  }
+}
