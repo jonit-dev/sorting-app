@@ -7,14 +7,10 @@ interface INode {
 }
 
 class Node implements INode {
-
-  public value: number;
-  public next: INode | null
-
-  constructor(value: number) {
-    this.value = value;
-    this.next = null
-  }
+  constructor(
+    public value: number,
+    public next: INode | null = null
+  ) { }
 }
 
 export class LinkedList implements ISortable {
